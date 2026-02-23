@@ -2,6 +2,10 @@ import React from "react";
 import "./App.css";
 import coconut from "./assets/coconut.jpg"
 import { Button, Container, Row, Col } from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { TwoDice } from "./components/TwoDice";
+import { Counter } from "./components/Counter";
 
 export default function App(): React.JSX.Element {
     return (
@@ -50,6 +54,14 @@ export default function App(): React.JSX.Element {
                     </Row>
                 </Container>
             </ul>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
         </div>
     );
 }
