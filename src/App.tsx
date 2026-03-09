@@ -4,11 +4,22 @@ import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
 import { Counter } from "./components/Counter";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 export default function App(): React.JSX.Element {
     return (
-        <div className="App-header">
-            COS420
+        <div className="App">
+            <header className="App-header">
+                UM COS420 with React Hooks and TypeScript
+            </header>
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
