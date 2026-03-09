@@ -8,7 +8,7 @@ import { DoubleHalf } from "./bad-components/DoubleHalf";
 import { ColoredBox } from "./bad-components/ColoredBox";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 
-function App(): React.JSX.Element {
+export default function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
@@ -31,5 +31,3 @@ function App(): React.JSX.Element {
         </div>
     );
 }
-
-export default App;
